@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native'
+import {View, Text, StyleSheet} from 'react-native'
 
 type TrendingNewsType = {
     news: {
@@ -12,8 +12,23 @@ function TrendingNews({news}: TrendingNewsType){
 
     const {title, description, body} = news;
     return(
-        <View>
-            
+        <View style={styles.trending_news}>
+            <h1>Trending News</h1>
+            <div>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <p>{body}</p>
+            </div>
         </View>
     )
 }
+
+
+const styles = StyleSheet.create({
+    trending_news: {
+        padding: 10,
+        marginTop: 35,
+    }
+})
+
+export default TrendingNews

@@ -21,7 +21,6 @@ const Header = () => {
 
             {/* Bottom Section */}
             <View style={styles.bottomBar}>
-                <Text style={styles.title}>Trending News</Text>
             </View>
 
         </View>

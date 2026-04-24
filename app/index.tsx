@@ -1,5 +1,7 @@
 import { Text, View } from "react-native";
 import Header from "./components/header";
+import TrendingNews from "./components/TrendingNews";
+import data from "../assets/news.json";
 
 export default function Index() {
   return (
@@ -10,8 +12,10 @@ export default function Index() {
         // alignItems: "center",
       }}
     >
-      {/* <Text>Edit app/index.tsx to edit this screen.</Text> */}
       <Header />
+      <TrendingNews news={data.news_1}  />
+      <TrendingNews news={data.news_2}  />
+      <TrendingNews news={data.news_3}  />
     </View>
   );
 }
