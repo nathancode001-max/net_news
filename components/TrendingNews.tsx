@@ -13,12 +13,12 @@ function TrendingNews({news}: TrendingNewsType){
     const {title, description, body} = news;
     return(
         <View style={styles.trending_news}>
-            <h1>Trending News</h1>
-            <div>
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <p>{body}</p>
-            </div>
+            <Text>Trending News</Text>
+            <View>
+                <Text>{title}</Text>
+                <Text>{description}</Text>
+                <Text>{body}</Text>
+            </View>
         </View>
     )
 }

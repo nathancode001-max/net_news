@@ -1,8 +1,8 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import { Image } from 'expo-image'
 
-const menu_icon = require('../../public/menu_btn.png')
-const cnn_logo = require('../../public/CNN_logo.png')
+const menu_icon = require('../public/menu_btn.png')
+const cnn_logo = require('../public/CNN_logo.png')
 
 const Header = () => {
     return (
